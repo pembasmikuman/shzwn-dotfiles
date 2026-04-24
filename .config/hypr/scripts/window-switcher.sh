@@ -2,9 +2,13 @@
 
 # Window switcher — list all open windows, select to focus
 
-selected=$(hyprctl clients -j | jq -r '.[] | "\(.pid):\(.class):\(.title)"' | \
+windows=$(hyprctl clients -j | jq -r '.[] | "\(.pid):\(.class):\(.title)"')
+count=$(echo "$windows" | wc -l)
+lines=$((count > 15 ? 15 : count))
+
+selected=$(echo "$windows" | \
   awk -F: '{printf "%s (%s)\n", $3, $2}' | \
-  rofi -dmenu -i -p "Windows" -theme-str 'window {width: 50%;} listview {lines: 15;}')
+  rofi -dmenu -i -p "Windows" -theme-str "window {width: 50%;} listview {lines: $lines;}")
 
 if [ -z "$selected" ]; then
   exit 0

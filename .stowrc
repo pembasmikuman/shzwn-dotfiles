@@ -1,0 +1,7 @@
+--target=$HOME
+--ignore=\.git
+--ignore=\.claude
+--ignore=CLAUDE.*
+--ignore=ARCHITECTURE\.md
+--ignore=DECISIONS\.md
+--ignore=README\.md

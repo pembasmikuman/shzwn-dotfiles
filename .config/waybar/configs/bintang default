@@ -36,12 +36,11 @@
 "modules-right": [
         //"mpris",
         //"custom/separator#dot-line",
-        "group/notify",	
+        "group/notify",
 	"battery",
-	"custom/separator#blank",  
+	"custom/separator#blank",
 	"group/audio",
 	"custom/separator#blank",
 	"custom/power",
 	],
 }
-

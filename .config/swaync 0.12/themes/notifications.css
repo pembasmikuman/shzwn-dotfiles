@@ -108,6 +108,3 @@
 .notification.normal progress {
   background-color: alpha(@primary, 0.6);
 }
-
-
-

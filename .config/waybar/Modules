@@ -69,8 +69,8 @@
 		"critical": 15
 	},
 	"format": "{icon} {capacity}%",
-	"format-charging": "  {capacity}%",
-	"format-plugged": "󱘖   {capacity}%",
+	"format-charging": " {capacity}%",
+	"format-plugged": "󱘖 {capacity}%",
 	"format-alt-click": "click",
 	"format-full": "{icon} Full",
 	"format-alt": "{icon} {time}",
@@ -312,7 +312,8 @@
     "performance": "",
     "balanced": "",
     "power-saver": ""
-  }
+  },
+  "on-click": "$HOME/.config/hypr/scripts/power.sh"
 },
 
 "pulseaudio": {

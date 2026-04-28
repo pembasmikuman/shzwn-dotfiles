@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # === CONFIG ===
-WALLPAPER_DIR="$HOME/wallpapers"
+WALLPAPER_DIR="$HOME/Pictures/wallpapers"
 SYMLINK_PATH="$HOME/.config/hypr/current_wallpaper"
 
 cd "$WALLPAPER_DIR" || exit 1

@@ -4,7 +4,7 @@
 @define-color hover           @on_secondary_fixed_variant;
 @define-color urgent          @on_secondary_fixed;
 
-* {
+*:not(progress):not(progressbar):not(trough){
 
   /*background-alt:        @color1;      Buttons background */
   /*selected:              @color2;      Button selected */
@@ -13,7 +13,6 @@
   /*text-selected:         @background; */
 
   color: @text;
-
   all: unset;
   font-size: 14px;
   font-family: "JetBrains Mono Nerd Font";
@@ -77,11 +76,11 @@
 
 .summary {
   font-weight: 800;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .body {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .floating-notifications.background .notification-row .notification-background .close-button {
@@ -107,6 +106,5 @@
 
 .notification.low progress,
 .notification.normal progress {
-  background-color: @hover;
+  background-color: alpha(@primary, 0.6);
 }
-
